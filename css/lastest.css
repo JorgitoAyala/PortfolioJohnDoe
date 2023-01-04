@@ -1,0 +1,61 @@
+/*SECTION 4: Lastest work*/
+.lastest-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 3rem 3rem 3rem;
+}
+.lastest-container .info-card {
+  margin-right: 40%;
+}
+.lastest-container .info-card h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.lastest-jobs {
+  position: relative;
+  width: 100%;
+}
+.lastest-jobs button {
+  position: absolute;
+  font-weight: 700;
+  top: 41%;
+  padding: 1rem;
+  border-radius: 50%;
+  background: #0cebeb;
+  background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+  background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s;
+}
+.lastest-jobs #btnPrev {
+  left: -3%;
+}
+.lastest-jobs #btnPrev:hover {
+  transform: translateX(10px);
+}
+.lastest-jobs #btnNext {
+  right: -3%;
+}
+.lastest-jobs #btnNext:hover {
+  transform: translateX(-10px);
+}
+.jobs-wrapper {
+  margin-top: 3rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.jobs-wrapper .grid-card {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 16px;
+}
+.jobs-wrapper .grid-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
