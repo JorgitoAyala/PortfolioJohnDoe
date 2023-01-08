@@ -1,0 +1,55 @@
+header {
+  width: 100%;
+  height: 65px;
+}
+
+header nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1080px;
+  width: 100%;
+  height: 80px;
+  padding: 1rem 3rem;
+  top: 0;
+  background: #0cebeb;
+  background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+  background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  z-index: 100;
+}
+
+/*Logo*/
+header nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+header nav .logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #f2f2f2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+header nav .logo h1 {
+  font-size: 1.75rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.233);
+}
+
+/*Menu*/
+header nav .menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+header nav .menu a {
+  font-weight: 500;
+  cursor: pointer;
+}
+header nav .menu a:hover {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.233);
+}

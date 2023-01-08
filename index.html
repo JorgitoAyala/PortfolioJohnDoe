@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="./img/profile_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--CSS STYLES-->
+  <link rel="stylesheet" href="style.css">
+  <!--REMIX ICONS-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <title>Portfolio John Doe</title>
+</head>
+
+<!--
+  By: Jorge Ayala (PE)
+  Version 1.0.
+  
+  NOTE: This little project is imcompleted, there's no header and footer, no responsive design, the card slider is not implemented and there is no more functionality with javascript.
+
+  PSDTA: After finish the project, I'll add a README.
+  
+  Collab:
+  https://www.figma.com/file/uglBHUpySMiXCwgtha9nnc/Bootcamp-reto?node-id=0%3A1&t=4imbCUrKBdkxqvRs-0
+
+  Inspired by figma project:
+  https://elements.envato.com/es/design-website-template-personal-profile-S4U5TDV
+-->
+
+<body>
+  <div class="main-container">
+    <header>
+      <nav>
+        <!--Logo-->
+        <div class="logo">
+          <img src="./img/profile_logo.png" alt="logo">
+          <h1>John Doe</h1>
+        </div>
+
+        <!--Menu-->
+        <div class="menu">
+          <a>About</a>
+          <a>Services</a>
+          <a>Job</a>
+          <a>Experience</a>
+          <a>Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--BANNER-->
+      <section class="banner-container">
+        <div class="presentation-card v-center">
+          <div class="info-card">
+            <small>Hello...</small>
+            <h1>I'am John Doe</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cupiditate pariatur asperiores dolor hic
+              nam.
+            </p>
+            <button>Contact me</button>
+          </div>
+        </div>
+
+        <img src="img/bg_profile.png" alt="bg_profile" />
+      </section>
+
+      <!--ABOUT ME-->
+      <section class="aboutme-container">
+        <div class="aboutme-profile">
+          <div class="gradient-decoration"></div>
+          <img src="img/profile.png" alt="bg_profile" />
+        </div>
+
+        <div class="aboutme-info v-center">
+          <div class="info-card">
+            <h2>About Me</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero earum dolorem, maxime eum facere
+              inventore
+              explicabo velit quasi vero veritatis omnis et repellat atque, sit autem possimus reprehenderit, in rem?
+            </p>
+            <div class="tags">
+              <button class="all-center">
+                <i class="ri-facebook-fill"></i>
+              </button>
+              <button class="all-center">
+                <i class="ri-twitter-fill"></i>
+              </button>
+              <button class="all-center">
+                <i class="ri-instagram-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SERVICES-->
+      <section class="services-container">
+        <div class="info-card">
+          <h2>Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis fugiat voluptates consequatur
+            laudantium mollitia aperiam eaque animi, ut iure.
+          </p>
+        </div>
+
+        <div class="services-grid" id="services-grid"></div>
+      </section>
+
+      <!--LAST WORK-->
+      <section class="lastest-container">
+        <div class="info-card">
+          <h2>Lastest Work</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis fugiat voluptates consequatur
+            laudantium mollitia aperiam eaque animi, ut iure.
+          </p>
+        </div>
+
+        <div class="lastest-jobs">
+          <div class="jobs-wrapper" id="jobs-wrapper"></div>
+          <button class="all-center" type="button" id="btnPrev">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+          <button class="all-center" type="button" id="btnNext">
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+      </section>
+
+      <!--EXPERIENCE-->
+      <section class="experience-container">
+        <div class="info-card">
+          <h2>Experience</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis fugiat voluptates consequatur
+            laudantium mollitia aperiam eaque animi, ut iure.
+          </p>
+        </div>
+
+        <div class="experience-grid" id="experience-grid"></div>
+      </section>
+
+      <!--CONTACT-->
+      <section class="contact-container">
+        <div class="info-card">
+          <h2>Contact Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis fugiat voluptates consequatur
+            laudantium mollitia aperiam eaque animi, ut iure.
+          </p>
+        </div>
+
+        <div class="data">
+          <form action="">
+            <h3>Let's Make Contact!!</h3>
+            <div>
+              <label for="email">
+                <i class="ri-mail-fill"></i>
+                <p>Email</p>
+              </label>
+              <input type="email" name="email" placeholder="Type your email..." />
+            </div>
+            <div>
+              <label for="subject">
+                <i class="ri-mail-check-fill"></i>
+                <p>Subject</p>
+              </label>
+              <input type="text" name="subject" placeholder="Create a subject..." />
+            </div>
+            <div>
+              <label for="message">
+                <i class="ri-chat-smile-3-fill"></i>
+                <p>Message</p>
+              </label>
+              <textarea name="message" placeholder="Type your message..."></textarea>
+            </div>
+            <button type="submit">
+              <i class="ri-mail-send-fill"></i>
+              <p>Send email</p>
+            </button>
+          </form>
+          <img src="./img/profile_contact.png" alt="contact">
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-back">
+        <div class="footer-container">
+          <!--Resume information-->
+          <div class="info-part">
+            <!--Logo-->
+            <div class="logo">
+              <img src="./img/profile_logo.png" alt="logo">
+              <h1>John Doe</h1>
+            </div>
+
+            <!--Menu-->
+            <div class="menu">
+              <a>
+                <p>About</p>
+                <i class="ri-arrow-right-line"></i>
+              </a>
+              <a>
+                <p>Services</p>
+                <i class="ri-arrow-right-line"></i>
+              </a>
+              <a>
+                <p>Job</p>
+                <i class="ri-arrow-right-line"></i>
+              </a>
+              <a>
+                <p>Experience</p>
+                <i class="ri-arrow-right-line"></i>
+              </a>
+              <a>
+                <p>Contact</p>
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="cube-part">
+            <h3>The John Doe Project</h3>
+            <!--3D Cube-->
+            <div class="cube">
+              <div class="big">
+                <span style="--i:0;--clr:#0cebeb;"></span>
+                <span style="--i:1;--clr:#17cfcf;"></span>
+                <span style="--i:2;--clr:#0cebeb;"></span>
+                <span style="--i:3;--clr:#17cfcf;"></span>
+                <span class="top" style="--clr:#00ffff;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Laws and Agreements-->
+        <div class="main-rights">
+          <p>Portfolio Designed by Jorge Ayala - All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<!--UTILS-->
+<script src="./js/utils.js" type="text/javascript"></script>
+<!--DATA-->
+<script src="./js/data.js" type="text/javascript"></script>
+<!--MAIN JS-->
+<script src="script.js" type="text/javascript"></script>
+
+</html>

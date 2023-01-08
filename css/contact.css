@@ -1,0 +1,82 @@
+/*SECTION 6: Contact*/
+.contact-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 3rem 3rem 3rem;
+}
+.contact-container .info-card {
+  margin-right: 40%;
+}
+.contact-container .info-card h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.contact-container .data {
+  width: 100%;
+  height: 500px;
+  padding: 3rem;
+  margin-top: 3rem;
+  background: #870000;
+  background: -webkit-linear-gradient(to right, #190a05, #870000);
+  background: linear-gradient(to right, #190a05, #870000);
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 16px;
+}
+.contact-container .data form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #f2f2f2;
+  gap: 1rem;
+}
+.contact-container .data form h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.contact-container .data form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.contact-container .data form div label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contact-container .data form div input,
+.contact-container .data form div textarea {
+  background: #ffffff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 10pt;
+}
+.contact-container .data form div textarea {
+  height: 85px;
+  resize: none;
+}
+.contact-container .data form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 50%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  background: #0cebeb;
+  background: -webkit-linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+  background: linear-gradient(to right, #29ffc6, #20e3b2, #0cebeb);
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+.contact-container .data form button:hover {
+  transform: scale(1.05);
+}
+.contact-container .data img {
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
